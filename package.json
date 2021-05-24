@@ -1,0 +1,27 @@
+{
+  "name": "registration-backend",
+  "version": "1.0.0",
+  "description": "Registration Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "local": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"{routes,models,controllers}/**/*.{js,jsx,json,md}\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-form-data": "^2.0.14",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "author": "Nikola Nikolic",
+  "license": "ISC"
+}
