@@ -6,6 +6,7 @@ const teamSchema = new Schema(
 		name: {
 			type: String,
 			required: true,
+			unique: true,
 		},
 		size: {
 			type: Number,
@@ -15,10 +16,10 @@ const teamSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		phoneNumber:{
-			type:String,
-			required:false,
-		}
+		phoneNumber: {
+			type: String,
+			required: false,
+		},
 	},
 	{ timestamps: true }
 );
